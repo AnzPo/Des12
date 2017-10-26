@@ -126,11 +126,11 @@ def SEND_MESSAGE(op):
             if msg.contentType == 0:
                 #if "gname:" in msg.text:
 #--------------------------------------------------------------
-                if msg.text == "Kick":
+                if msg.text == "/kick":
                     print "ok"
-                    _name = msg.text.replace("Kick","")
+                    _name = msg.text.replace("/kick","")
                     gs = client.getGroup(msg.to)
-                    sendMessage(msg.to,"Kick By: シャムス aka Syams255\nSaya Tidak Bertanggung Jawab Apabila Group Anda Rata Karena Bot Ini, Silahkan Kalian Tanya Sendiri Akun Ini\nTerimakasih\nAdd Pembuat Scrip BotKick http://line.me/ti/p/~syams011 Terimakasih ▄︻̷̿┻̿═━一")
+                    sendMessage(msg.to,"Kick By: シャムス aka Syams255\nSaya Tidak Bertanggung Jawab Apabila Group Anda Rata Karena Bot Ini, Silahkan Kalian Tanya Sendiri Akun Ini\nTerimakasih\n▄︻̷̿┻̿═━一")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
@@ -147,9 +147,9 @@ def SEND_MESSAGE(op):
                             except:
                                 sendText(msg.to,"error")
 #-------------------------------------------------------------			
-		if msg.text == "Speed":
+		if msg.text == "/kcptn":
                     start = time.time()
-                    sendMessage(msg.to, "Cuman Ngetes Speed Nya Doang :v")
+                    sendMessage(msg.to, "Cuman Ngetes Speed Nya Doang :v)#")
                     elapsed_time = time.time() - start
                     sendMessage(msg.to, "%sseconds" % (elapsed_time))
 #-------------------------------------------------------------
@@ -157,6 +157,7 @@ def SEND_MESSAGE(op):
                     sendMessage(msg.to,"3")
                     sendMessage(msg.to,"2")
                     sendMessage(msg.to,"1")
+                    sendMessage(msg.to,"Mulai")
                     sendMessage(msg.to,"Waktunya Menyanyi :v")
                     sendMessage(msg.to,"Ku mengejar bus yang mulai berjalan")
                     sendMessage(msg.to,"Ku ingin ungkapkan kepada dirimu")
@@ -222,8 +223,7 @@ def SEND_MESSAGE(op):
                     sendMessage(msg.to,"Spam Telah Selesai :v")
                     sendMessage(msg.to,"Created By : シャムス aka Syams255")
                     sendMessage(msg.to,"Jangan Marah Yah :v")
-                    sendMessage(msg.to,"Add Line Pembuat BOT Klau Mau Bot Protect Dan Bot Kicker")
-                    sendMessage(msg.to,"http://line.me/ti/p/~syams011 Terimakasih")
+                    sendMessage(msg.to,"Enjay Aja Lah Dengan Spam Ini Karena Spam Nya Udah Selesai")
 #-------------------------------------------------------------
                 if msg.text == "All":
 		      group = client.getGroup(msg.to)
