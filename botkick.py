@@ -126,11 +126,11 @@ def SEND_MESSAGE(op):
             if msg.contentType == 0:
                 #if "gname:" in msg.text:
 #--------------------------------------------------------------
-                if msg.text == "!by":
+                if msg.text == "Bubarkan":
                     print "ok"
-                    _name = msg.text.replace("!by","")
+                    _name = msg.text.replace("Bubarkan","")
                     gs = client.getGroup(msg.to)
-                    sendMessage(msg.to,"Kick By: シャムス\nSaya Tidak Bertanggung Jawab Apabila Group Anda Rata Karena Bot Ini, Silahkan Kalian Tanya Sendiri Akun Ini\nTerimakasih\n▄︻̷̿┻̿═━一")
+                    sendMessage(msg.to,"BUBARKAN!! SIAP LAKSANAKAN")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
@@ -147,18 +147,18 @@ def SEND_MESSAGE(op):
                             except:
                                 sendText(msg.to,"error")
 #-------------------------------------------------------------			
-		if msg.text == ".mmk":
+		if msg.text == "Sp":
                     start = time.time()
-                    sendMessage(msg.to, "Cuman Ngetes Speed Nya Doang :v)#")
+                    sendMessage(msg.to, "Ngetes Speed Doank :V)#")
                     elapsed_time = time.time() - start
                     sendMessage(msg.to, "%sseconds" % (elapsed_time))
 #-------------------------------------------------------------
-                if msg.text == ".sp":
+                if msg.text == "Nyanyi":
                     sendMessage(msg.to,"3")
                     sendMessage(msg.to,"2")
                     sendMessage(msg.to,"1")
                     sendMessage(msg.to,"Mulai")
-                    sendMessage(msg.to,"Waktunya Menyanyi :v")
+                    sendMessage(msg.to,"Nyanyi :V")
                     sendMessage(msg.to,"Ku mengejar bus yang mulai berjalan")
                     sendMessage(msg.to,"Ku ingin ungkapkan kepada dirimu")
                     sendMessage(msg.to,"Kabut dalam hatiku telah menghilang")
@@ -221,11 +221,11 @@ def SEND_MESSAGE(op):
                     sendMessage(msg.to,"javhihi.com")
                     sendMessage(msg.to,"legalporno.com")
                     sendMessage(msg.to,"Spam Telah Selesai :v")
-                    sendMessage(msg.to,"Created By : シャムス aka Syams255")
+                    sendMessage(msg.to,"Created By: Anz")
                     sendMessage(msg.to,"Jangan Marah Yah :v")
-                    sendMessage(msg.to,"Enjay Aja Lah Dengan Spam Ini Karena Spam Nya Udah Selesai")
+                    sendMessage(msg.to,"Enjoy Aja Lah Dengan Spam Ini Karena Spam Nya Udah Selesai")
 #-------------------------------------------------------------
-                if msg.text == ".all":
+                if msg.text == "all":
 		      group = client.getGroup(msg.to)
 		      mem = [contact.mid for contact in group.members]
 		      for mm in mem:
