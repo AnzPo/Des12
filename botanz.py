@@ -218,8 +218,6 @@ def SEND_MESSAGE(op):
                     sendMessage(msg.to,"“Suka” itu kata paling hebat!")
                     sendMessage(msg.to,"“Suka” itu kata paling hebat!")
                     sendMessage(msg.to,"Ungkapkan perasaanmu")
-                    sendMessage(msg.to,"javhihi.com")
-                    sendMessage(msg.to,"legalporno.com")
                     sendMessage(msg.to,"Spam Telah Selesai :v")
                     sendMessage(msg.to,"Created By: Anz")
                     sendMessage(msg.to,"Jangan Marah Yah :v")
